@@ -12,9 +12,9 @@ class SignupScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Color(0xFF1d2630),
       appBar: AppBar(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Color(0xFF1d2630),
       foregroundColor: Colors.white,
       title: Text("Create Account"),
       ),

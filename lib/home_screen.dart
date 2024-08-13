@@ -29,9 +29,9 @@ final _widgets =[
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 72, 95, 225),
+      backgroundColor: const Color(0xFF1d2630),
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 72, 95, 225),
+        backgroundColor: const Color(0xFF1d2630),
         foregroundColor: Colors.white,
         title: Text('Todo App'),
 
