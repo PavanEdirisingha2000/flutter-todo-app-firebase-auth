@@ -88,7 +88,14 @@ class _SignupScreenState extends State<SignupScreen> {
                     return null;
                   },
                 ),
-                SizedBox(height: 50),
+                SizedBox(height: 20),
+                
+                if (_errorMessage.isNotEmpty)
+                  Text(
+                    _errorMessage,
+                    style: TextStyle(color: Colors.red, fontSize: 14),
+                  ),
+                SizedBox(height: 20),
                 SizedBox(
                   height: 40,
                   width: MediaQuery.of(context).size.width / 1.5,
@@ -121,12 +128,6 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
-                if (_errorMessage.isNotEmpty)
-                  Text(
-                    _errorMessage,
-                    style: TextStyle(color: Colors.red, fontSize: 14),
-                  ),
                 SizedBox(height: 20),
                 TextButton(
                   onPressed: () {
