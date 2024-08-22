@@ -106,18 +106,24 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                     } on FirebaseAuthException catch (e) {
                       setState(() {
-                        if (e.code == 'channel-error') {
-                          _errorMessage = 'Enter Email and password';
-                        } else if (e.code == 'invalid-credential') {
-                          _errorMessage = 'The email or password you entered is incorrect. Please try again.';
-                        } 
-			                    else if (e.code == 'invalid-email') {
-                          _errorMessage = 'Please enter a valid email address.';
-			                    } else if (e.code == 'too-many-requests'){
-                          _errorMessage = 'Too many login attempts. Please wait a few minutes and try again.';
-                        }
+                          switch (e.code) {
+                            case 'channel-error':
+                              _errorMessage = 'Enter Email and password';
+                              break;
+                            case 'invalid-credential':
+                              _errorMessage = 'The email or password you entered is incorrect. Please try again.';
+                              break;
+                            case 'invalid-email':
+                              _errorMessage = 'Please enter a valid email address.';
+                              break;
+                            case 'too-many-requests':
+                              _errorMessage = 'Too many login attempts. Please wait a few minutes and try again.';
+                              break;
+                            default:
+                              _errorMessage = 'An unexpected error occurred. Please try again later.';
+                              break;
+                              }
 
-                        
                           
                       });
                     } catch (e) {
