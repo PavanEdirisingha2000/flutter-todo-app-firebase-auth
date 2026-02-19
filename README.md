@@ -28,21 +28,27 @@ A feature-rich Todo application built with Flutter and Firebase, designed for le
 
 ## Screenshots
 
-| Login Screen | Sign Up Screen | Password Reset |
-|:---:|:---:|:---:|
-| ![Login](assets/screeshots/1.jpg) | ![SignUp](assets/screeshots/2.jpg) | ![Reset](assets/screeshots/3.jpg) |
+<p align="center">
+  <img src="assets/screeshots/1.jpg" width="200"/>
+  <img src="assets/screeshots/2.jpg" width="200"/>
+  <img src="assets/screeshots/3.jpg" width="200"/>
+</p>
 
-| Home Screen (Pending) | Home Screen (Completed) | Add Task |
-|:---:|:---:|:---:|
-| ![Pending](assets/screeshots/4.jpg) | ![Completed](assets/screeshots/5.jpg) | ![Add](assets/screeshots/6.jpg) |
+<p align="center">
+  <img src="assets/screeshots/4.jpg" width="200"/>
+  <img src="assets/screeshots/5.jpg" width="200"/>
+  <img src="assets/screeshots/6.jpg" width="200"/>
+</p>
 
-| Edit Task | Slide Actions | Delete Action |
-|:---:|:---:|:---:|
-| ![Edit](assets/screeshots/7.jpg) | ![Slide](assets/screeshots/8.jpg) | ![Delete](assets/screeshots/9.jpg) |
+<p align="center">
+  <img src="assets/screeshots/7.jpg" width="200"/>
+  <img src="assets/screeshots/8.jpg" width="200"/>
+  <img src="assets/screeshots/9.jpg" width="200"/>
+</p>
 
-| Task Complete |
-|:---:|
-| ![Complete](assets/screeshots/10.jpg) |
+<p align="center">
+  <img src="assets/screeshots/10.jpg" width="200"/>
+</p>
 
 ## Technologies & Dependencies
 
